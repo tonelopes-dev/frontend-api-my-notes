@@ -38,7 +38,6 @@ export function Profile() {
       old_password: oldPassword,
     };
     const userUpdated = Object.assign(user, updated);
-    con;
 
     await updateProfile({ user: userUpdated, avatarFile });
   }
@@ -50,7 +49,7 @@ export function Profile() {
     const imagePreview = URL.createObjectURL(file);
     setAvatar(imagePreview);
   }
-  console.log(user, "profile");
+
   return (
     <Container>
       <header>
