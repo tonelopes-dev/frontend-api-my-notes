@@ -50,7 +50,7 @@ export function NewNote() {
       return alert("Adicione o título da Nota antes de Salvar.");
     }
     if (newTag || newLink) {
-      return alert("Clique no botão '+' para adicionar ou deixe o campo vazio.");
+      return alert("Clique no botão '+' para adicionar. Tag e Link são obrigatórios.");
     }
     await api.post("/notes", {
       title,
