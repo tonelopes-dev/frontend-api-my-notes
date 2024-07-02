@@ -49,7 +49,7 @@ export function NewNote() {
     if (!title) {
       return alert("Adicione o título da Nota antes de Salvar.");
     }
-    if (newTag || newLink) {
+    if (!newTag || !newLink) {
       return alert("Clique no botão '+' para adicionar. Tag e Link são obrigatórios.");
     }
     await api.post("/notes", {
