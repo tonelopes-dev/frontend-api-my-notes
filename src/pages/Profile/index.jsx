@@ -18,6 +18,7 @@ export function Profile() {
   const [email, setEmail] = useState(user.email);
   const [oldPassword, setOldPassword] = useState();
   const [newPassword, setNewPassword] = useState();
+  const [loading, setLoading] = useState(false);
 
   const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
 
@@ -38,16 +39,23 @@ export function Profile() {
       old_password: oldPassword,
     };
     const userUpdated = Object.assign(user, updated);
-
+    setLoading(true);
     await updateProfile({ user: userUpdated, avatarFile });
+    setLoading(false);
+
+    navigate("/");
   }
 
   function handleChangeAvatar(event) {
+    event.preventDefault();
+
     const file = event.target.files[0];
     setAvatarFile(file);
 
     const imagePreview = URL.createObjectURL(file);
     setAvatar(imagePreview);
+
+    setLoading(false);
   }
 
   return (
@@ -101,10 +109,17 @@ export function Profile() {
           onChange={(e) => setNewPassword(e.target.value)}
           icon={FiCheck}
         />
-        <Button
-          title="Salvar"
-          onClick={handleUpdateProfile}
-        />
+        {loading ? (
+          <Button
+            title="Carregando..."
+            disabled
+          />
+        ) : (
+          <Button
+            title="Salvar"
+            onClick={handleUpdateProfile}
+          />
+        )}
       </Form>
     </Container>
   );

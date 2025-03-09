@@ -11,10 +11,12 @@ export function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
   function handleSignUp() {
+    setLoading(true);
     if (!name || !email || !password) {
       return alert("Por favor preencha todos os campos!");
     }
@@ -32,6 +34,7 @@ export function SignUp() {
           alert("Não foi possivel cadastrar!");
         }
       });
+    setLoading(false);
   }
 
   return (
@@ -63,10 +66,17 @@ export function SignUp() {
           autoComplete="current-password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button
-          title="Cadastrar"
-          onClick={handleSignUp}
-        />
+        {loading ? (
+          <Button
+            title="Cadastrando..."
+            disabled
+          />
+        ) : (
+          <Button
+            title="Cadastrar"
+            onClick={handleSignUp}
+          />
+        )}
         <Link to="/">Voltar para o Login</Link>
       </Form>
     </Container>

@@ -12,9 +12,12 @@ export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { signIn } = useAuth();
+  const [loading, setLoading] = useState(false);
 
-  function handleSingIn() {
-    signIn({ email, password });
+  async function handleSingIn() {
+    setLoading(true);
+    await signIn({ email, password });
+    setLoading(false);
   }
 
   return (
@@ -39,10 +42,17 @@ export function SignIn() {
           icon={FiLock}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button
-          title="Entrar"
-          onClick={handleSingIn}
-        />
+        {loading ? (
+          <Button
+            title="Carregando..."
+            disabled
+          />
+        ) : (
+          <Button
+            title="Entrar"
+            onClick={handleSingIn}
+          />
+        )}
         <Link to="/register">Criar conta</Link>
       </Form>
       <Background />
