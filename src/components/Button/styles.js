@@ -11,6 +11,11 @@ export const Container = styled.button`
   margin-top: 16px;
   border-radius: 10px;
   font-weight: 500;
+  transition: opacity 0.3s ease; /* Transição para opacidade */
+
+  &:hover {
+    opacity: 0.8; /* Diminui a opacidade no hover */
+  }
 
   &:disabled {
     opacity: 0.5;

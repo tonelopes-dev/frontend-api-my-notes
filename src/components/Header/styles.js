@@ -48,8 +48,14 @@ export const Logout = styled.button`
   border: none;
   background: none;
 
+  :hover {
+    //brilho no hover
+    color: ${({ theme }) => theme.COLORS.ORANGE};
+  }
+
   > svg {
     color: ${({ theme }) => theme.COLORS.GRAY_100};
     font-size: 36px;
+    transition: color 0.3s ease;
   }
 `;
