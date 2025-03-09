@@ -7,6 +7,8 @@ import { Button } from "../../components/Button";
 import { api } from "../../services/api";
 import { Link, useNavigate } from "react-router-dom";
 
+import { useAuth } from "../../hooks/auth";
+
 export function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,8 +17,11 @@ export function SignUp() {
 
   const navigate = useNavigate();
 
+  const { signUp } = useAuth();
+
   function handleSignUp() {
     setLoading(true);
+    signUp({ email, password});
     if (!name || !email || !password) {
       return alert("Por favor preencha todos os campos!");
     }
@@ -74,7 +79,7 @@ export function SignUp() {
         ) : (
           <Button
             title="Cadastrar"
-            onClick={handleSignUp}
+            onClick={handleSignUp }
           />
         )}
         <Link to="/">Voltar para o Login</Link>

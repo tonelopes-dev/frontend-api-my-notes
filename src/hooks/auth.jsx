@@ -28,6 +28,18 @@ function AuthProvider({ children }) {
     }
   }
 
+  async function signUp(user) {
+    try {
+      localStorage.setItem("@myappnotes:userUp", JSON.stringify(user));
+    } catch (error) {
+      if (error.response) {
+        alert(error.response.data.message);
+      } else {
+        alert("Não foi possível fazer o login");
+      }
+    }
+  }
+
   function signOut() {
     localStorage.removeItem("@myappnotes:user");
     localStorage.removeItem("@myappnotes:token");
@@ -72,9 +84,7 @@ function AuthProvider({ children }) {
     }
   }, []);
 
-  return (
-    <AuthContext.Provider value={{ signIn, user: data.user, signOut, updateProfile }}>{children}</AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={{ signIn, signUp, user: data.user, signOut, updateProfile }}>{children}</AuthContext.Provider>;
 }
 
 function useAuth() {
