@@ -1,10 +1,10 @@
-# MyAppNotes - Flash Card Notes
+# My Notes - Flash Card Notes
 
 ![App Screenshot](/public/print-banner.png)
 
 ## 📌 Visão Geral
 
-O **MyAppNotes** é um aplicativo de anotações rápidas que permite criar e gerenciar flashcards para auxiliar na memorização de conceitos. Com uma interface intuitiva, o app facilita a organização de ideias e o aprendizado eficiente.
+O **My Notes** é um aplicativo de anotações rápidas que permite criar e gerenciar flashcards para auxiliar na memorização de conceitos. Com uma interface intuitiva, o app facilita a organização de ideias e o aprendizado eficiente.
 
 ## 🚀 Tecnologias Utilizadas
 
