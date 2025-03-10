@@ -14,6 +14,9 @@ O **MyAppNotes** é um aplicativo de anotações rápidas que permite criar e ge
 - **Axios**: Consumo de APIs.
 - **React Icons**: Ícones modernos e customizáveis.
 - **Vite**: Build rápido e otimizado para desenvolvimento.
+- **Node.js e Express**: Backend robusto e escalável.
+- **Knex.js e SQLite**: Gerenciamento de banco de dados.
+- **JWT e Bcrypt.js**: Autenticação e segurança.
 
 ## 🛠️ Funcionalidades
 
@@ -29,7 +32,9 @@ O **MyAppNotes** é um aplicativo de anotações rápidas que permite criar e ge
 
 ## 📦 Instalação e Uso
 
-1. Clone o repositório:
+### Frontend
+
+1. Clone o repositório do frontend:
 
    ```bash
    git clone https://github.com/seu-usuario/myappnotes.git
@@ -53,6 +58,43 @@ O **MyAppNotes** é um aplicativo de anotações rápidas que permite criar e ge
    http://localhost:5173
    ```
 
+### Backend
+
+1. Clone o repositório do backend:
+
+   ```bash
+   git clone https://github.com/tonelopes-dev/backend-api-my-notes.git
+   cd backend-api-my-notes
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Execute as migrações do banco de dados:
+
+   ```bash
+   npm run migrate
+   ```
+
+4. Inicie o servidor:
+
+   ```bash
+   npm run dev
+   ```
+
+5. O backend rodará em:
+   ```bash
+   http://localhost:3000
+   ```
+
+## 🔗 Repositórios
+
+- 🔥 **Frontend**: [MyAppNotes Frontend](https://github.com/tonelopes-dev/frontend-api-my-notes)
+- 🚀 **Backend**: [MyAppNotes API](https://github.com/tonelopes-dev/backend-api-my-notes)
+
 ## 🤝 Contribuição
 
 Se deseja contribuir, sinta-se à vontade para abrir um PR ou reportar issues.
@@ -60,8 +102,8 @@ Se deseja contribuir, sinta-se à vontade para abrir um PR ou reportar issues.
 ## 📩 Contato
 
 Para mais informações sobre o projeto ou parcerias:
-📌 LinkedIn: [Seu Perfil](https://www.linkedin.com/in/seuperfil)
-📧 Email: [contato@seudominio.com.br](mailto:contato@seudominio.com.br)
+📌 LinkedIn: [Tone Lopes](https://www.linkedin.com/in/tonelopes-dev/)
+📧 Email: [tonelopes.dev@gmail.com](mailto:tonelopes.dev@gmail.com)
 
 ---
 
