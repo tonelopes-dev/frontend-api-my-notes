@@ -60,7 +60,7 @@ Se deseja contribuir, sinta-se à vontade para abrir um PR ou reportar issues.
 ## 📩 Contato
 
 Para mais informações sobre o projeto ou parcerias:
-📌 LinkedIn: [Seu Perfil](https://www.linkedin.com/in/seuperfil)
+📌 LinkedIn: [Tone Lopes](https://www.linkedin.com/in/seuperfil)
 📧 Email: [contato@seudominio.com.br](mailto:contato@seudominio.com.br)
 
 ---
