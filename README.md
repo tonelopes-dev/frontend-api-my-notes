@@ -1,10 +1,10 @@
-# MyAppNotes - Flash Card Notes
+# My Notes - Flash Card Notes
 
 ![App Screenshot](/public/print-banner.png)
 
 ## 📌 Visão Geral
 
-O **MyAppNotes** é um aplicativo de anotações rápidas que permite criar e gerenciar flashcards para auxiliar na memorização de conceitos. Com uma interface intuitiva, o app facilita a organização de ideias e o aprendizado eficiente.
+O **My Notes** é um aplicativo de anotações rápidas que permite criar e gerenciar flashcards para auxiliar na memorização de conceitos. Com uma interface intuitiva, o app facilita a organização de ideias e o aprendizado eficiente.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -58,6 +58,7 @@ O **MyAppNotes** é um aplicativo de anotações rápidas que permite criar e ge
    http://localhost:5173
    ```
 
+<<<<<<< HEAD
 ### Backend
 
 1. Clone o repositório do backend:
@@ -90,11 +91,17 @@ O **MyAppNotes** é um aplicativo de anotações rápidas que permite criar e ge
    http://localhost:3000
    ```
 
+=======
+>>>>>>> ab74b8ca0d09b901687e19418f6d371d965c11c0
 ## 🔗 Repositórios
 
 - 🔥 **Frontend**: [MyAppNotes Frontend](https://github.com/tonelopes-dev/frontend-api-my-notes)
 - 🚀 **Backend**: [MyAppNotes API](https://github.com/tonelopes-dev/backend-api-my-notes)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ab74b8ca0d09b901687e19418f6d371d965c11c0
 ## 🤝 Contribuição
 
 Se deseja contribuir, sinta-se à vontade para abrir um PR ou reportar issues.
@@ -102,7 +109,11 @@ Se deseja contribuir, sinta-se à vontade para abrir um PR ou reportar issues.
 ## 📩 Contato
 
 Para mais informações sobre o projeto ou parcerias:
+<<<<<<< HEAD
 📌 LinkedIn: [Tone Lopes](https://www.linkedin.com/in/tonelopes-dev/)
+=======
+📌 LinkedIn: [Tone Lopes](https://www.linkedin.com/in/seuperfil)
+>>>>>>> ab74b8ca0d09b901687e19418f6d371d965c11c0
 📧 Email: [tonelopes.dev@gmail.com](mailto:tonelopes.dev@gmail.com)
 
 ---
