@@ -18,6 +18,15 @@ O **My Notes** é um aplicativo de anotações rápidas que permite criar e gere
 - **Knex.js e SQLite**: Gerenciamento de banco de dados.
 - **JWT e Bcrypt.js**: Autenticação e segurança.
 
+## ℹ️ Credenciais de Acesso
+```bash
+login: estudante@email.com
+```
+```bash
+senha: estudante2025
+```
+
+
 ## 🛠️ Funcionalidades
 
 - 📌 **Criação de Flashcards**: Adicione e edite rapidamente seus cartões de estudo.
