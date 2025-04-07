@@ -21,7 +21,7 @@ export function SignIn() {
     try {
       await signIn({ email, password });
       localStorage.removeItem("@myappnotes:userUp");
-      navigate("/sua-pagina-principal");
+      navigate("/");
     } catch (err) {
       setError("Credenciais inválidas. Verifique seu e-mail e senha.");
       console.error("Erro ao fazer login:", err);
