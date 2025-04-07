@@ -53,6 +53,11 @@ O **My Notes** é um aplicativo de anotações rápidas que permite criar e gere
    http://localhost:5173
    ```
 
+## 🗃️ Repositório API (backend)
+
+   [Link do Repositório](https://github.com/tonelopes-dev/backend-api-my-notes)
+
+
 ## 🤝 Contribuição
 
 Se deseja contribuir, sinta-se à vontade para abrir um PR ou reportar issues.
