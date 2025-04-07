@@ -35,7 +35,7 @@ export const Brand = styled.div`
 
 export const Menu = styled.ul`
   grid-area: menu;
-
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   padding-top: 64px;
