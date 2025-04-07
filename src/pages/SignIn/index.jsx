@@ -43,7 +43,7 @@ export function SignIn() {
         } catch (error) {
           console.error("Erro ao analisar JSON do localStorage:", error);
         } finally {
-          setDataLoaded(true); // Indica que os dados foram carregados
+          setDataLoaded(true); // Indica que os dados foram carregados.
         }
         localStorage.removeItem("@myappnotes:userUp");
       } else {
