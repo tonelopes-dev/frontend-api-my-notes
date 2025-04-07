@@ -61,7 +61,7 @@ Se deseja contribuir, sinta-se à vontade para abrir um PR ou reportar issues.
 
 Para mais informações sobre o projeto ou parcerias:
 📌 LinkedIn: [Tone Lopes](https://www.linkedin.com/in/seuperfil)
-📧 Email: [contato@seudominio.com.br](mailto:contato@seudominio.com.br)
+📧 Email: [contato@seudominio.com.br](mailto:tonelopes.dev@gmail.com)
 
 ---
 
