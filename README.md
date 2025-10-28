@@ -1,6 +1,6 @@
 # My Notes - Flash Card Notes
 
-![App Screenshot](https://tone-monte-portfolio-v3.s3.us-east-1.amazonaws.com/projects/1758298651603-aed2sl-banner-fsw-store.png)
+![App Screenshot](https://tone-monte-portfolio-v3.s3.us-east-1.amazonaws.com/projects/1758298652896-jmq083-banner-my-notes.png)
 
 ## 📌 Visão Geral
 
